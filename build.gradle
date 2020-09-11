@@ -9,8 +9,11 @@ plugins {
 
 project.version = scmVersion.version
 
+String dockerHubUsernameProperty = findProperty('dockerHubUsername') ?: 'nrizk83'
+String imageName = "${dockerHubUsernameProperty}/${project.name}:${project.version}"
+
 docker {
-    name "${project.name}:${project.version}"
+    name imageName
     files "plugins.txt", "seedJob.xml"
 }
 
