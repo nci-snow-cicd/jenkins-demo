@@ -35,3 +35,18 @@ pipelineJob('theme-park-job-docker') {
         }
     }
 }
+pipelineJob('jenkins-job-docker') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/nci-snow-cicd/jenkins-demo.git'
+                    }
+                    branch 'master'
+                    scriptPath('Jenkins-docker')
+                }
+            }
+        }
+    }
+}
