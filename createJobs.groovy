@@ -50,3 +50,18 @@ pipelineJob('jenkins-job-docker') {
         }
     }
 }
+pipelineJob('ubuntu-job-docker') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/nci-snow-cicd/ubuntu.git'
+                    }
+                    branch 'master'
+                    scriptPath('ubuntu-docker')
+                }
+            }
+        }
+    }
+}
