@@ -80,3 +80,18 @@ pipelineJob('alpine-job-docker') {
         }
     }
 }
+pipelineJob('sonarcube-job-docker') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/nci-snow-cicd/sonarcube.git'
+                    }
+                    branch 'master'
+                    scriptPath('alpine-docker')
+                }
+            }
+        }
+    }
+}
