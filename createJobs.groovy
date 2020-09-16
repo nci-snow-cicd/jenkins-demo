@@ -89,7 +89,7 @@ pipelineJob('sonarcube-job-docker') {
                         url 'https://github.com/nci-snow-cicd/sonarcube.git'
                     }
                     branch 'master'
-                    scriptPath('alpine-docker')
+                    scriptPath('sonarcube-docker')
                 }
             }
         }
