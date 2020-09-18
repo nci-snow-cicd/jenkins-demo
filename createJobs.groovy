@@ -95,3 +95,18 @@ pipelineJob('sonarcube-job-docker') {
         }
     }
 }
+pipelineJob('apc-job-docker') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/nci-snow-cicd/nci-webtools-dceg-age-period-cohort.git'
+                    }
+                    branch 'master'
+                    scriptPath('apc-docker')
+                }
+            }
+        }
+    }
+}
