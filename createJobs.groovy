@@ -63,8 +63,8 @@ pipelineJob('ubuntu-job-docker') {
                     notifyNotBuilt(true)
                     notifyUnstable(true)
                     notifyFailure(true)
-                    notifyBackToNormal(true)
-                    notifyRepeatedFailure(true)
+                    notifyBackToNormal(false)
+                    notifyRepeatedFailure(false)
                     timeout(30000)
                 }
             }
