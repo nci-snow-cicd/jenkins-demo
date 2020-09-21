@@ -1,4 +1,23 @@
 pipelineJob('pipelineJob') {
+     properties {
+        office365ConnectorWebhooks {
+            webhooks {
+                webhook {
+                    name('Teams Webhook')
+                    url('https://outlook.office.com/webhook/6faa453a-84bf-4bfb-8a01-c0373d260d02@a5c2ab90-5b50-4606-9f1d-83c879f0a49f/IncomingWebhook/2bb9efbe59534841bc7f4ba1f8f787dd/4088b722-d5d7-4c04-b7af-4b2a5ea227cb')
+                    startNotification(true)
+                    notifySuccess(true)
+                    notifyAborted(true)
+                    notifyNotBuilt(true)
+                    notifyUnstable(true)
+                    notifyFailure(true)
+                    notifyBackToNormal(false)
+                    notifyRepeatedFailure(false)
+                    timeout(30000)
+                }
+            }
+        }
+    }
     definition {
         cps {
             script(readFileFromWorkspace('pipelineJob.groovy'))
@@ -7,6 +26,25 @@ pipelineJob('pipelineJob') {
     }
 }
 pipelineJob('theme-park-job') {
+     properties {
+        office365ConnectorWebhooks {
+            webhooks {
+                webhook {
+                    name('Teams Webhook')
+                    url('https://outlook.office.com/webhook/6faa453a-84bf-4bfb-8a01-c0373d260d02@a5c2ab90-5b50-4606-9f1d-83c879f0a49f/IncomingWebhook/2bb9efbe59534841bc7f4ba1f8f787dd/4088b722-d5d7-4c04-b7af-4b2a5ea227cb')
+                    startNotification(true)
+                    notifySuccess(true)
+                    notifyAborted(true)
+                    notifyNotBuilt(true)
+                    notifyUnstable(true)
+                    notifyFailure(true)
+                    notifyBackToNormal(false)
+                    notifyRepeatedFailure(false)
+                    timeout(30000)
+                }
+            }
+        }
+    }
     definition {
         cpsScm {
             scm {
@@ -21,6 +59,25 @@ pipelineJob('theme-park-job') {
     }
 }
 pipelineJob('theme-park-job-docker') {
+     properties {
+        office365ConnectorWebhooks {
+            webhooks {
+                webhook {
+                    name('Teams Webhook')
+                    url('https://outlook.office.com/webhook/6faa453a-84bf-4bfb-8a01-c0373d260d02@a5c2ab90-5b50-4606-9f1d-83c879f0a49f/IncomingWebhook/2bb9efbe59534841bc7f4ba1f8f787dd/4088b722-d5d7-4c04-b7af-4b2a5ea227cb')
+                    startNotification(true)
+                    notifySuccess(true)
+                    notifyAborted(true)
+                    notifyNotBuilt(true)
+                    notifyUnstable(true)
+                    notifyFailure(true)
+                    notifyBackToNormal(false)
+                    notifyRepeatedFailure(false)
+                    timeout(30000)
+                }
+            }
+        }
+    }
     definition {
         cpsScm {
             scm {
@@ -36,6 +93,25 @@ pipelineJob('theme-park-job-docker') {
     }
 }
 pipelineJob('jenkins-job-docker') {
+     properties {
+        office365ConnectorWebhooks {
+            webhooks {
+                webhook {
+                    name('Teams Webhook')
+                    url('https://outlook.office.com/webhook/6faa453a-84bf-4bfb-8a01-c0373d260d02@a5c2ab90-5b50-4606-9f1d-83c879f0a49f/IncomingWebhook/2bb9efbe59534841bc7f4ba1f8f787dd/4088b722-d5d7-4c04-b7af-4b2a5ea227cb')
+                    startNotification(true)
+                    notifySuccess(true)
+                    notifyAborted(true)
+                    notifyNotBuilt(true)
+                    notifyUnstable(true)
+                    notifyFailure(true)
+                    notifyBackToNormal(false)
+                    notifyRepeatedFailure(false)
+                    timeout(30000)
+                }
+            }
+        }
+    }
     definition {
         cpsScm {
             scm {
@@ -85,6 +161,25 @@ pipelineJob('ubuntu-job-docker') {
     }
 }
 pipelineJob('alpine-job-docker') {
+     properties {
+        office365ConnectorWebhooks {
+            webhooks {
+                webhook {
+                    name('Teams Webhook')
+                    url('https://outlook.office.com/webhook/6faa453a-84bf-4bfb-8a01-c0373d260d02@a5c2ab90-5b50-4606-9f1d-83c879f0a49f/IncomingWebhook/2bb9efbe59534841bc7f4ba1f8f787dd/4088b722-d5d7-4c04-b7af-4b2a5ea227cb')
+                    startNotification(true)
+                    notifySuccess(true)
+                    notifyAborted(true)
+                    notifyNotBuilt(true)
+                    notifyUnstable(true)
+                    notifyFailure(true)
+                    notifyBackToNormal(false)
+                    notifyRepeatedFailure(false)
+                    timeout(30000)
+                }
+            }
+        }
+    }
     definition {
         cpsScm {
             scm {
@@ -100,6 +195,25 @@ pipelineJob('alpine-job-docker') {
     }
 }
 pipelineJob('sonarcube-job-docker') {
+     properties {
+        office365ConnectorWebhooks {
+            webhooks {
+                webhook {
+                    name('Teams Webhook')
+                    url('https://outlook.office.com/webhook/6faa453a-84bf-4bfb-8a01-c0373d260d02@a5c2ab90-5b50-4606-9f1d-83c879f0a49f/IncomingWebhook/2bb9efbe59534841bc7f4ba1f8f787dd/4088b722-d5d7-4c04-b7af-4b2a5ea227cb')
+                    startNotification(true)
+                    notifySuccess(true)
+                    notifyAborted(true)
+                    notifyNotBuilt(true)
+                    notifyUnstable(true)
+                    notifyFailure(true)
+                    notifyBackToNormal(false)
+                    notifyRepeatedFailure(false)
+                    timeout(30000)
+                }
+            }
+        }
+    }
     definition {
         cpsScm {
             scm {
@@ -115,6 +229,25 @@ pipelineJob('sonarcube-job-docker') {
     }
 }
 pipelineJob('apc-job-docker') {
+     properties {
+        office365ConnectorWebhooks {
+            webhooks {
+                webhook {
+                    name('Teams Webhook')
+                    url('https://outlook.office.com/webhook/6faa453a-84bf-4bfb-8a01-c0373d260d02@a5c2ab90-5b50-4606-9f1d-83c879f0a49f/IncomingWebhook/2bb9efbe59534841bc7f4ba1f8f787dd/4088b722-d5d7-4c04-b7af-4b2a5ea227cb')
+                    startNotification(true)
+                    notifySuccess(true)
+                    notifyAborted(true)
+                    notifyNotBuilt(true)
+                    notifyUnstable(true)
+                    notifyFailure(true)
+                    notifyBackToNormal(false)
+                    notifyRepeatedFailure(false)
+                    timeout(30000)
+                }
+            }
+        }
+    }
     definition {
         cpsScm {
             scm {
