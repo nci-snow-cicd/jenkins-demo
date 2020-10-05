@@ -154,7 +154,7 @@ pipelineJob('ubuntu-job-docker') {
                         url 'https://github.com/nci-snow-cicd/ubuntu.git'
                     }
                     branch 'master'
-                    scriptPath('ubuntu-cbiit-docker')
+                    scriptPath('ubuntu-docker')
                 }
             }
         }
