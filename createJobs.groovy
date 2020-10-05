@@ -188,7 +188,7 @@ pipelineJob('alpine-job-docker') {
                         url 'https://github.com/nci-snow-cicd/alpine.git'
                     }
                     branch 'master'
-                    scriptPath('alpine-docker')
+                    scriptPath('alpine-cbiit-docker')
                 }
             }
         }
